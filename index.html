@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>BULB</title>
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+        <h2>EXPIREMENT OF VUE.JS WITH BULB FUNCTIONALITY</h2>
+        <!-- The only valid bulb statuses are "on" and "off"-->
+
+        <!-- This div will show when the status is equivalent to "off"-->
+        <div v-if = "status == 'off' ">
+            <p>This will display when the v-if directive is "off"</p>
+
+            <img class="bulb" id="bulb_off" src="/images/bulboff.png" alt="Bulb_off">
+        </div>
+    
+         <!-- This div will show when the status is equivalent to "on"-->
+        <div v-else-if = "status=='on' ">
+            <p>This will display when the v-if directive is "on"</p>
+
+            <img class="bulb" id="bulb_on" src="/images/bulbon.jpg" alt="Bulb_on">
+        </div>
+        
+        <!-- This div will show when there is no valid bulb status entered-->
+        <div v-else>
+            <p>THERE IS NO BULB STATUS TO SHOW.</p>
+        </div>
+        </div>
+
+        <p>Author: AUMA MERCY GABRIELLA</p>
+    </div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

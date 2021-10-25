@@ -1,0 +1,18 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    text-align: center;
+}
+.bulb{
+    width: 15%;
+    height: 15%;
+}
+p{
+    margin: 20px;
+}
+
+#bulb_off, #bulb_on{
+    margin: auto;
+}
+
+
